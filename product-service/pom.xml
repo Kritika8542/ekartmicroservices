@@ -2,14 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <parent>
-        <artifactId>microservices-new</artifactId>
-        <groupId>com.programming.techie</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.3.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+    <groupId>com.bits.assignment</groupId>
+    <artifactId>product-service</artifactId>
+    <version>1.0.0</version>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>product-service</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -20,6 +25,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <version>2.7.5</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -28,10 +34,12 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>3.1.4</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
             <optional>true</optional>
         </dependency>
         <dependency>
@@ -42,29 +50,35 @@
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>mongodb</artifactId>
+            <version>1.17.4</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>junit-jupiter</artifactId>
+            <version>1.17.4</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-sleuth</artifactId>
+            <version>3.1.5</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+            <version>3.1.5</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>2.7.5</version>
         </dependency>
 
         <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-registry-prometheus</artifactId>
+            <version>1.10.0</version>
             <scope>runtime</scope>
         </dependency>
     </dependencies>
